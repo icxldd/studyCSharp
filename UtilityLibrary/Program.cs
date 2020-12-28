@@ -49,6 +49,9 @@ namespace UtilityLibrary
             var childCCNode1 = tree.AddChildNode(childCNode1.Id, "人事部1-A成员");
             var childCCNode2 = tree.AddChildNode(childCNode2.Id, "人事部2-A成员");
             var childCCNode3 = tree.AddChildNode(childCNode3.Id, "人事部3-A成员");
+
+            //tree.Delete(4);
+
             tree.Show();
             //Console.WriteLine("请输入需要添加的根节点名称");
 
@@ -56,42 +59,42 @@ namespace UtilityLibrary
             //var rootNode = tree.AddNewNode(rootName);
             //Console.WriteLine($"添加成功，节点ID为{rootNode.Id}");
 
-            while (true)
-            {
-                Console.WriteLine("请输入是要插入还是显示0：显示；1：插入");
+            //while (true)
+            //{
+            //    Console.WriteLine("请输入是要插入还是显示0：显示；1：插入");
 
-                if (Convert.ToInt32(Console.ReadLine()) == 0)
-                {
-                    Console.WriteLine("请输入需要显示什么0：上层；1：下层");
+            //    if (Convert.ToInt32(Console.ReadLine()) == 0)
+            //    {
+            //        Console.WriteLine("请输入需要显示什么0：上层；1：下层");
 
-                    int val = Convert.ToInt32(Console.ReadLine());
-                    if (val == 0)
-                    {
-                        Console.WriteLine("请输入节点ID");
-                        int Id = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(JsonConvert.SerializeObject(tree.GetAncestorNode(Id)));
+            //        int val = Convert.ToInt32(Console.ReadLine());
+            //        if (val == 0)
+            //        {
+            //            Console.WriteLine("请输入节点ID");
+            //            int Id = Convert.ToInt32(Console.ReadLine());
+            //            Console.WriteLine(JsonConvert.SerializeObject(tree.GetAncestorNode(Id)));
 
-                    }
-                    else if (val == 1)
-                    {
+            //        }
+            //        else if (val == 1)
+            //        {
 
-                        Console.WriteLine("请输入节点ID");
-                        int Id = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(JsonConvert.SerializeObject(tree.GetDescendantNode(Id)));
-                    }
+            //            Console.WriteLine("请输入节点ID");
+            //            int Id = Convert.ToInt32(Console.ReadLine());
+            //            Console.WriteLine(JsonConvert.SerializeObject(tree.GetDescendantNode(Id)));
+            //        }
 
-                }
-                else
-                {
+            //    }
+            //    else
+            //    {
 
-                    Console.WriteLine("请输入需要添加的子节点名称");
-                    string childName = Console.ReadLine();
-                    Console.WriteLine("请输入父节点ID");
-                    string parentId = Console.ReadLine();
-                    var childNode = tree.AddChildNode(Convert.ToInt32(parentId), childName);
-                    tree.Show();
-                }
-            }
+            //        Console.WriteLine("请输入需要添加的子节点名称");
+            //        string childName = Console.ReadLine();
+            //        Console.WriteLine("请输入父节点ID");
+            //        string parentId = Console.ReadLine();
+            //        var childNode = tree.AddChildNode(Convert.ToInt32(parentId), childName);
+            //        tree.Show();
+            //    }
+            //}
 
 
 

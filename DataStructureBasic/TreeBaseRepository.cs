@@ -149,6 +149,56 @@ namespace DataStructureBasic
         }
 
 
+        /// <summary>
+        /// 删除节点 子节点也删除
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="accountId"></param>
+        /// <returns></returns>
+        public void Delete(int id)
+        {
+            var node = AccountTree.Single(x => x.Id == id);
+
+            /*
+             * 删除节点的基础理论
+             * 1.删除当前节点以及左右值包含的所有节点
+             * 2.设当前节点左右值之间的差距是x
+             *      树上右值都大于当前节点右值的节点中
+             *          1)如果左值大于当前节点,则该节点的左右值都减去(x+1)
+             *          2)如果左值小于当前节点,则仅右值减去(x+1)
+             */
+
+            //1.删除当前节点以及左右值包含的所有节点
+            var containNodes = AccountTree.Where(x => x.LValue >= node.LValue && x.RValue <= node.RValue).ToList();
+
+            AccountTree.RemoveAll(xx => containNodes.Select(x => x.Id).Contains(xx.Id));
+
+            //树上右值都大于当前节点右值的节点中
+            var linkedNodes = AccountTree.Where(x => x.RValue > node.RValue).ToList();
+
+            var step = node.RValue - node.LValue + 1;
+
+            foreach (var it in linkedNodes)
+            {
+                if (it.LValue > node.LValue)
+                {
+                    //1)如果左值大于当前节点,则该节点的左右值都减去(x+1)
+                    it.LValue = it.LValue - step;
+                    it.RValue = it.RValue - step;
+                }
+                else
+                {
+                    //2)如果左值小于当前节点,则仅右值减去(x + 1)
+                    it.RValue = it.RValue - step;
+                }
+            }
+            foreach (var itemLinkedNodes in linkedNodes)
+            {
+                AccountTree[AccountTree.FindIndex(x => x.Id == itemLinkedNodes.Id)] = itemLinkedNodes;
+            }
+        }
+
+
         public void Show()
         {
             Console.WriteLine(JsonConvert.SerializeObject(AccountTree.Select(x => new { Id = x.Id, Name = x.Name, LValue = x.LValue, RValue = x.RValue })));
