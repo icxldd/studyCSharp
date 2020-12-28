@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+msrAqDzY9I1bvR3j/mD1nsTn1dMoFg6pgakUhStqPwEe7vphdImHrFbtnTWWXtrm+LwET0q+mIpyVhR81gE6w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Leon\\source\\repos\\UtilityLibrary\\UtilityLibrary\\UtilityLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Leon\\.nuget\\packages\\hashids.net\\1.3.0\\hashids.net.1.3.0.nupkg.sha512",
+    "C:\\Users\\Leon\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Leon\\.nuget\\packages\\sixlabors.imagesharp\\1.0.2\\sixlabors.imagesharp.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

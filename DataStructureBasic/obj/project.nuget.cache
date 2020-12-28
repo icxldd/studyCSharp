@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "k2RPV7LjlCBPv3yXFpaagBIp5yoJLJ0N4CvS3RD53WmlRGmH830yBYix/LBxkYCASkJcEc7SUEY2h0k6HmJAvw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Leon\\source\\repos\\UtilityLibrary\\DataStructureBasic\\DataStructureBasic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Leon\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

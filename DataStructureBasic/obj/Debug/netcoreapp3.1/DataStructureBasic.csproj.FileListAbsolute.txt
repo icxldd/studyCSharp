@@ -1,0 +1,9 @@
+C:\Users\Leon\source\repos\UtilityLibrary\DataStructureBasic\bin\Debug\netcoreapp3.1\DataStructureBasic.deps.json
+C:\Users\Leon\source\repos\UtilityLibrary\DataStructureBasic\bin\Debug\netcoreapp3.1\DataStructureBasic.dll
+C:\Users\Leon\source\repos\UtilityLibrary\DataStructureBasic\bin\Debug\netcoreapp3.1\DataStructureBasic.pdb
+C:\Users\Leon\source\repos\UtilityLibrary\DataStructureBasic\obj\Debug\netcoreapp3.1\DataStructureBasic.csprojAssemblyReference.cache
+C:\Users\Leon\source\repos\UtilityLibrary\DataStructureBasic\obj\Debug\netcoreapp3.1\DataStructureBasic.AssemblyInfoInputs.cache
+C:\Users\Leon\source\repos\UtilityLibrary\DataStructureBasic\obj\Debug\netcoreapp3.1\DataStructureBasic.AssemblyInfo.cs
+C:\Users\Leon\source\repos\UtilityLibrary\DataStructureBasic\obj\Debug\netcoreapp3.1\DataStructureBasic.dll
+C:\Users\Leon\source\repos\UtilityLibrary\DataStructureBasic\obj\Debug\netcoreapp3.1\DataStructureBasic.pdb
+C:\Users\Leon\source\repos\UtilityLibrary\DataStructureBasic\obj\Debug\netcoreapp3.1\DataStructureBasic.csproj.CoreCompileInputs.cache

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9OqSQZ0+u+SbMzR9R6X11lEqH/qpPMCFTaiK/bL9Dodkc5fugpf0qZ6Q7mfVQG9y0T/wsQVKLIoVk14j9TWabQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Leon\\source\\repos\\UtilityLibrary\\UtilityLibraryCore\\UtilityLibraryCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Leon\\.nuget\\packages\\hashids.net\\1.3.0\\hashids.net.1.3.0.nupkg.sha512",
+    "C:\\Users\\Leon\\.nuget\\packages\\sixlabors.imagesharp\\1.0.2\\sixlabors.imagesharp.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
